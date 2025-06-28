@@ -3,7 +3,7 @@
   "Version": "0.0.0",
   "Description": "An animated status supporting both Nitro emojis and standard emojis.",
   "Name": "Animated Status",
-  "OpenGUIFunction": "showAnimatedStatusGUI()",
+  "OpenGUIFunction": "showAnimatedStatusGUI",
   "Able to Disable Plugin": false,
   "Settings": true
 }
