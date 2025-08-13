@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Discord Enhancement Suite",
+  "version": "1.0.0",
+  "description": "Enhanced Discord experience for web browsers",
+  "permissions": [
+    "storage",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "https://*.discord.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.discord.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
